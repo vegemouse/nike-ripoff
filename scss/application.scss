@@ -1,0 +1,75 @@
+@import "reset";
+
+$medium-grey: #8D8D8D;
+$light-grey: #E5E5E5;
+$black: #000;
+
+
+body {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $medium-grey;
+  text-decoration: none;
+}
+
+.header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $light-grey;
+  height: 39px;
+}
+
+.sub-brands {
+  a {
+    padding: 10px 30px;
+    border-right: 1px solid $light-grey;
+    font-size: 0.8em;
+    font-weight: lighter;
+  }
+}
+
+.account {
+  padding-right: 10px;
+  a {
+    padding: 10px;
+    font-size: 0.8em;
+    font-weight: lighter;
+  }
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid $light-grey;
+}
+.gender {
+  a {
+    padding: 10px;
+    color: $black;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+}
+.check {
+  height: 25px;
+}
+.search-input {
+  border: 1px solid $light-grey;
+  padding: 10px;
+  border-radius: 10px;
+  input {
+    border: 0;
+    font-size: 0.8em;
+    margin-left: 5px;
+    font-weight: lighter;
+  }
+}
