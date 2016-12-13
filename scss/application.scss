@@ -2,7 +2,9 @@
 
 $medium-grey: #8D8D8D;
 $light-grey: #E5E5E5;
-$black: #000;
+$dark-grey: #444;
+$black: #191919;
+$white: #fff;
 
 
 body {
@@ -48,7 +50,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 14px 20px;
   border-bottom: 1px solid $light-grey;
 }
 .gender {
@@ -72,4 +74,88 @@ a {
     margin-left: 5px;
     font-weight: lighter;
   }
+}
+
+.hero {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 530px;
+  width: 100%;
+}
+
+.hero-content {
+  position: absolute;
+  right: 20px;
+  top: 5%;
+  color: white;
+  text-align: right;
+  h1 {
+    font-size: 4em;
+    font-weight: bolder;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  a {
+    position: relative;
+    top: 30px;
+    color: white;
+    background-color: $black;
+    padding: 20px;
+    font-size: 0.8em;
+    border-radius: 5px;
+  }
+}
+.footer {
+
+  background-color: $black;
+  color: $white;
+}
+.footer-nav {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px 0;
+  line-height: 1.5em;
+  .smaller {
+    display: block;
+    font-size: 0.7em;
+    letter-spacing: 1.5px;
+  }
+  h5 {
+    font-size: 0.8em;
+    color: $white;
+    font-weight: bold;
+  }
+}
+
+.shop, .help, .news {
+  margin: 0 20px;
+}
+
+.social {
+  margin-left: auto;
+}
+
+.copyright {
+  margin: 0 auto;
+  height: 39px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.5px solid $dark-grey;
+  font-size: 0.65em;
+  color: $medium-grey;
+  font-weight: lighter;
+  a {
+    margin: 0 10px;
+  }
+}
+
+.country a {
+  color: white;
 }
